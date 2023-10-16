@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'cedora';  
+}
+
+/* IMPORTANDO FONTE - Cedora Bold */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+/* IMPORTANDO FONTE - Cedora */
+@font-face {
+    font-family: 'cedora';
+    src: url(fonts/Cedora-RegularStd.otf);
+}
+
+
+/* CABEÇALHO */
+header{
+    display: flex; 
+    align-items: center;   
+    justify-content: space-between;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    width: 100%; /* Defina a largura para 100% para ocupar toda a largura da janela */
+    box-shadow: 1px 1px 10px 1px rgb(221, 221, 221);
+}
+
+header a{
+    text-decoration: none;
+    color: #616163;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 11px;
+        font-weight: bold;  
+    }
+}
+
+
+
+
+/* TÍTULO LOGO */
+header .logo{
+    font-family: 'cedora-bold';   
+    color: #616163;
+    padding-left: 50px;
+}
+
+header h1 span{
+    color: #07A187;
+}
+
+
+/* MENU BLOCO */
+header .menu{
+    padding-right: 50px;
+}
+
+/* MENU ITENS */
+header .menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-family: 'cedora';
+}
+
+
+/* ESTILO DOS LINKS DO MENU */
+.menu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul a:hover{
+    border-bottom: 2px solid #07A187;
+    padding-bottom: 5px;
+}
+
+/* IMAGEM TOPO */    
+.imagem-topo{
+    height: 180px;
+    background-image: url(img/img-top-solteiro.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TITULO QUARTO SOLTEIRO */
+.textos{
+    font-family: 'cedora';
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* CONTAINER DAS IMAGENS */
+.menu-quartos{
+    font-family: 'cedora';  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* IMAGEM DO QUARTO */
+.menu-quartos .quartos img{
+    width: 400px;
+    height: 250px;
+}
+
+
+/* TITULO DA LISTA */
+.descricao .titulo{
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.descricao .listas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+
+.descricao .listas ul li {
+    font-size: 18px;
+
+}
+
+/* Estilos para telas pequenas (por exemplo, dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .descricao .listas {
+        text-align: center;
+        padding: 30px;
+        display: block;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descricao .listas ul li{
+        font-size: 15px;
+        text-align: left;
+        padding: 8px;
+    }
+}
+
+
+
+
+

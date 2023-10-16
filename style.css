@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* IMPORTANDO FONTE - Cedora Bold */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+/* IMPORTANDO FONTE - Cedora */
+@font-face {
+    font-family: 'cedora';
+    src: url(fonts/Cedora-RegularStd.otf);
+}
+
+
+/* CABEÇALHO */
+header{
+    display: flex; 
+    align-items: center;   
+    justify-content: space-between;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    width: 100%; /* Defina a largura para 100% para ocupar toda a largura da janela */
+    box-shadow: 1px 1px 10px 1px rgb(221, 221, 221);
+}
+
+header a{
+    text-decoration: none;
+    color: #616163;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 11px;
+        font-weight: bold;  
+    }
+}
+
+
+
+
+/* TÍTULO LOGO */
+header .logo{
+    font-family: 'cedora-bold';   
+    color: #616163;
+    padding-left: 50px;
+}
+
+header h1 span{
+    color: #07A187;
+}
+
+
+/* MENU BLOCO */
+header .menu{
+    padding-right: 50px;
+}
+
+/* MENU ITENS */
+header .menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-family: 'cedora';
+}
+
+
+
+
+
+/* ESTILO DOS LINKS DO MENU */
+.menu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul a:hover{
+    border-bottom: 2px solid #07A187;
+    padding-bottom: 5px;
+}
+
+
+
+/* BANNER IMAGEM ILHA */
+.banner1{
+    height: 650px;
+    background-image: url(img/img-fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTO NO CENTRO DA IMAGEM */
+.banner1 .textos{
+    text-align: center;
+    background-color: rgba(7, 161, 135, 0.7); 
+    min-width: 30%;
+    max-width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    color: white;
+    border: 2px solid #73dfcd;
+}
+
+
+/* TEXTO NO CENTRO DA IMAGEM - H1*/
+.banner1 .textos h1{
+    font-family: 'cedora-bold';  
+}
+
+/* TEXTO NO CENTRO DA IMAGEM - PARAGRAFO*/
+.banner1 .textos p{
+    font-family: 'cedora';  
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .bemvindos p {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+.ponto{
+    color: white;
+}
+
+/* BANNER BEM-VINDOS */
+.bemvindos{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.bemvindos .titulos{
+    text-align: center;
+    font-family: 'cedora';  
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+
+
+
+/* QUARTOS */
+.menu-quartos{
+    font-family: 'cedora';  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+    gap: 40px;
+
+}
+
+/* LINKS */
+.menu-quartos .quartos a{
+    text-decoration: none;
+    color: black;
+}
+
+/* IMAGEM DO QUARTO */
+.menu-quartos .quartos img{
+    width: 350px;
+}
+
+/* TEXTO DOS QUARTOS */
+.menu-quartos p{
+    padding: 7px;
+    border-bottom: 3px solid #5A9788;
+}
+
+
+
+
+/* BANNER ROTAS */
+.rotas{
+    padding-bottom: 30px;
+}
+.rotas .titulos .h1{
+    text-align: center;
+    font-family: 'cedora';  
+    line-height: 2.5;
+}
+
+/* ROTAS */
+.rotas{
+    text-align: center;
+    font-family: 'cedora';  
+    line-height: 2.5;   
+}
+
+/* SOBRE A POUSADA */
+.sobre{
+    text-align: center;
+    font-family: 'cedora';  
+    line-height: 2.5;   
+}
+
+
+/* CARDS */
+@font-face {
+    font-family: 'cedora';
+    src: url(fonts/Cedora-RegularStd.otf);
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* FOTO */
+.container .bloco .foto01,
+.container .bloco .foto02,
+.container .bloco .foto03,
+.container .bloco .foto04{
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .bloco .foto01{
+    background-image: url(img/img1.jpg);
+}
+
+.container .bloco .foto02{
+    background-image: url(img/img2.jpg);
+}
+
+.container .bloco .foto03{
+    background-image: url(img/img3.jpg);
+}
+
+.container .bloco .foto04{
+    background-image: url(img/img5.jpg);
+}
+
+
+.bloco{
+    box-shadow: 1px 1px 5px 3px rgb(191, 191, 191);
+    width: 500px;
+    height: 130px;
+    display: flex;
+}
+
+.bloco .textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'cedora';
+    width: 90%;
+}
+
+.container p{
+    color: gray;
+    font-size: 13px;
+}
+
+
+/* BLOCOS DO FOOTER */
+.footer{
+    margin-top: 60px;
+    background-color: #49997C;
+    color: white;
+    font-family: 'cedora';
+}
+
+.footer .container-blocos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .container-blocos .blocos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer .container-blocos .blocos img{
+    padding: 10px;    
+}
+
+.footer .container-blocos .blocos a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .footer .container-blocos .blocos {
+        text-align: center;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .footer .container-blocos .blocos p span{
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+footer{
+    background-color: #418e72;
+    color: white;
+    font-family: 'cedora';    
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media (max-width: 768px) {
+    footer{
+        padding-bottom: 70px;
+    }
+}
